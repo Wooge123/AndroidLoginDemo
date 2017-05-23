@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             try {
                 // Enter URL address where your php file resides
-                url = new URL("http://192.168.1.102/db_client/login.inc.php");
+                url = new URL("http://192.168.1.102/login_demo/login.inc.php");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
                 return "exception";
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             } else if (result.equalsIgnoreCase("false")) {
 
-                // If username and password does not match display a error message
+                // If email and password does not match display a error message
                 Toast.makeText(MainActivity.this, "OOPs! Something went wrong. Connection Problem.", Toast.LENGTH_LONG).show();
             } else if (result.equalsIgnoreCase("exception") || result.equalsIgnoreCase("unsuccessful")) {
                 Toast.makeText(MainActivity.this, "OOPs! Something went wrong. Connection Problem.", Toast.LENGTH_LONG).show();

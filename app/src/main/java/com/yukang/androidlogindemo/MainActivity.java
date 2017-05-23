@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Append parameters to URL
                 Uri.Builder builder = new Uri.Builder()
-                        .appendQueryParameter("username", params[0])
+                        .appendQueryParameter("email", params[0])
                         .appendQueryParameter("password", params[1]);
                 String query = builder.build().getEncodedQuery();
 
